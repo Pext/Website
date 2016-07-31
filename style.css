@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(90deg, #75ede5 0%, #67dae7 51%, #75ede5 99%);
-	color: #333333;
-	text-align: center;
+    color: #333333;
+    text-align: center;
     width: 90%;
     max-width: 50em;
     margin: 0 auto;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-	font-size: 3em;
+    font-size: 3em;
 }
 
 @media only screen and (max-width: 770px) {
