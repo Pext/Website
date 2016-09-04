@@ -1,6 +1,6 @@
 $(function(){
     var changeString = function() {
-        var strings = ["password manager", "todo-list manager", "emoji selector", "ssh server list", "weather app"];
+        var strings = ["password manager", "todo-list manager", "emoji selector", "ssh server list", "weather app", "internet radio app"];
 
         $("#pext-purpose").fadeOut(function() {
             currentString = $("#pext-purpose").text();
