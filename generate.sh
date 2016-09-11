@@ -10,6 +10,7 @@ sed -i 's/{{ pass_link }}/https:\/\/github.com\/Pext\/pext_module_pass/' index.h
 sed -i 's/{{ radiobrowser_link }}/https:\/\/github.com\/Pext\/pext_module_radiobrowser/' index.html
 sed -i 's/{{ ssh_link }}/https:\/\/github.com\/Pext\/pext_module_ssh/' index.html
 sed -i 's/{{ todo_sh_link }}/https:\/\/github.com\/Pext\/pext_module_todo.sh/' index.html
+sed -i 's/{{ source_link }}/https:\/\/github.com\/Pext\/pext.github.io/' index.html
 
 # Generate NotABug version
 cp source notabug.html
@@ -21,3 +22,4 @@ sed -i 's/{{ pass_link }}/https:\/\/notabug.org\/Pext\/pext_module_pass/' notabu
 sed -i 's/{{ radiobrowser_link }}/https:\/\/notabug.org\/Pext\/pext_module_radiobrowser/' notabug.html
 sed -i 's/{{ ssh_link }}/https:\/\/notabug.org\/Pext\/pext_module_ssh/' notabug.html
 sed -i 's/{{ todo_sh_link }}/https:\/\/notabug.org\/Pext\/pext_module_todo.sh/' notabug.html
+sed -i 's/{{ source_link }}/https:\/\/notabug.org\/Pext\/Website/' notabug.html
