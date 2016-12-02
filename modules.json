@@ -1,0 +1,60 @@
+{
+  "modules": [
+    {
+      "name": "emoji",
+      "urls": [
+        "https://gihub.com/Pext/pext_module_emoji",
+        "https://notabug.org/Pext/pext_module_emoji"
+      ]
+    },
+    {
+      "name": "launcher",
+      "urls": [
+        "https://github.com/Pext/pext_module_launcher",
+        "https://notabug.org/Pext/pext_module_launcher"
+      ]
+    },
+    {
+      "name": "openweathermap",
+      "urls": [
+        "https://github.com/Pext/pext_module_openweathermap",
+        "https://notabug.org/Pext/pext_module_openweathermap"
+      ]
+    },
+    {
+      "name": "pass",
+      "urls": [
+        "https://github.com/Pext/pext_module_pass",
+        "https://notabug.org/Pext/pext_module_pass"
+      ]
+    },
+    {
+      "name": "radiobrowser",
+      "urls": [
+        "https://github.com/Pext/pext_module_radiobrowser",
+        "https://notabug.org/Pext/pext_module_radiobrowser"
+      ]
+    },
+    {
+      "name": "repl",
+      "urls": [
+        "https://github.com/Pext/pext_module_repl",
+        "https://notabug.org/Pext/pext_module_repl"
+      ]
+    },
+    {
+      "name": "ssh",
+      "urls": [
+        "https://github.com/Pext/pext_module_ssh",
+        "https://notabug.org/Pext/pext_module_ssh"
+      ]
+    },
+    {
+      "name": "todo.sh",
+      "urls": [
+        "https://github.com/Pext/pext_module_todo.sh",
+        "https://notabug.org/Pext/pext_module_todo.sh"
+      ]
+    }
+  ]
+}
