@@ -67,7 +67,7 @@
     </div>
 
     <div id="footer" class="text-center">
-        Copyright 2016 Sylvia van Os - <a href="{{ source_link }}">Source code</a>
+        Copyright 2016 - 2017 <a href="https://hackerchick.me/">Sylvia van Os</a> - <a href="{{ source_link }}">Source code</a>
     </div>
 </body>
 </html> 
