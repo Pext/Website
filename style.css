@@ -19,6 +19,17 @@ body {
     margin-bottom: 1em;
 }
 
+#mirror {
+    display: none;
+    background-color: yellow;
+    text-align: center;
+    padding: 2px;
+}
+
+#mirror p {
+    vertical-align: middle;
+}
+
 #content {
     margin: auto auto;
     max-width: 800px;
