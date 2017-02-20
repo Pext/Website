@@ -18,7 +18,7 @@
     </div>
     <div id="content">
         <div class="container-fluid text-center">
-            <div class="row">
+            <div class="row" id="introduction">
                 <div class="col-md-12">
                     <img id="logo" src="logo.svg" alt="Pext Logo" title="Pext Logo by White Paper Fox (whitepaperfox.com) under Creative Commons Attribution-ShareAlike 4.0, graciously donated by Peers (peers.community)" />
                     <h1>What is Pext</h1>
@@ -27,16 +27,19 @@
                     <a href="{{ core_link }}" class="btn btn-primary">Get Pext</a>
                 </div>
             </div>
-            <h1>Community</h1>
-            <div class="row">
+            <div class="row" id="community">
                 <div class="col-md-12">
+                    <h1>Community</h1>
                     <p>The Pext community can be found on the OFTC IRC network.</p>
                     <p>You can join using the <a href="https://webchat.oftc.net/?randomnick=1&channels=pext&prompt=1">OFTC web IRC</a> or, if you have your own IRC client, connect to <a href="irc://irc.oftc.net:6697/pext">irc://irc.oftc.net:6697/pext</a>. </p>
                     <p>Feel free to stop by for questions, tips or just a friendly chat with other users.</p>
+                    <a href="https://webchat.oftc.net/?randomnick=1&channels=pext&prompt=1" class="btn btn-default">Join our IRC</a>
                 </div>
             </div>
-            <h1>Available modules</h1>
-            <div class="row">
+            <div class="row" id="modules">
+                <div class="col-md-12">
+                    <h1>Available modules</h1>
+                </div>
                 <div class="module col-md-6 well">
                     <h1>emoji</h1>
                     <p>The emoji module allows Pext to be used as a quick and simple emoji selector.</p>
