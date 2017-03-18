@@ -38,6 +38,17 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <h1 id="support">Support me</h1>
+                    <p>Pext is completely developed in my spare time.</p>
+                    <p>If you like this project, donations are very welcome and I would be very grateful for them.</p>
+                    <p>As Pext has no real infrastructural costs, I'll mostly use these for personal expenses.</p>
+                    <p>If you'd like to donate in another way, please <a href="https://hackerchick.me/#contact" target="_blank">contact me</a>.</p>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UG6RQMFTRQH6N" class="btn btn-info" target="_blank">Donate using PayPal</a>
+                    <a href="https://www.stickermule.com/marketplace/17476-pext" class="btn btn-info" target="_blank">Buy stickers on StickerMule</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <h1 id="modules">Available modules</h1>
                 </div>
                 <div class="module col-md-6 well">
