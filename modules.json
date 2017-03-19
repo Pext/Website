@@ -2,6 +2,9 @@
   "modules": [
     {
       "name": "emoji",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to function as an emoji selector",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_emoji",
         "https://notabug.org/Pext/pext_module_emoji"
@@ -9,6 +12,9 @@
     },
     {
       "name": "launcher",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to launch applications",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_launcher",
         "https://notabug.org/Pext/pext_module_launcher"
@@ -16,6 +22,9 @@
     },
     {
       "name": "openweathermap",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to retrieve weather information from OpenWeatherMap",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_openweathermap",
         "https://notabug.org/Pext/pext_module_openweathermap"
@@ -23,6 +32,9 @@
     },
     {
       "name": "pass",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to do password management through pass",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_pass",
         "https://notabug.org/Pext/pext_module_pass"
@@ -30,6 +42,9 @@
     },
     {
       "name": "radiobrowser",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to play internet radio",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_radiobrowser",
         "https://notabug.org/Pext/pext_module_radiobrowser"
@@ -37,6 +52,9 @@
     },
     {
       "name": "repl",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to evaluate Python statements",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_repl",
         "https://notabug.org/Pext/pext_module_repl"
@@ -44,6 +62,9 @@
     },
     {
       "name": "ssh",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to quickly open a terminal with a SSH connection to a server in ~/.ssh/config",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_ssh",
         "https://notabug.org/Pext/pext_module_ssh"
@@ -51,6 +72,9 @@
     },
     {
       "name": "todo.sh",
+      "developer": "Sylvia van Os (Pext lead developer)",
+      "description": "Allows Pext to do todo-list management through todo.sh",
+      "license": "GPL-3.0+",
       "urls": [
         "https://github.com/Pext/pext_module_todo.sh",
         "https://notabug.org/Pext/pext_module_todo.sh"
