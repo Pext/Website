@@ -10,6 +10,7 @@
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
+    <link href="cssbox.css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/x-icon" href="pext.png">
 </head>
 
@@ -22,11 +23,31 @@
             <div class="row">
                 <div class="col-md-12">
                     <img id="logo" src="logo.svg" alt="Pext Logo" title="Pext Logo by White Paper Fox (whitepaperfox.com) under Creative Commons Attribution-ShareAlike 4.0, graciously donated by Peers (peers.community)" />
-                    <img src="screenshot.jpg" alt="Pext screenshot">
+                </div>
+            </div>
+            <div class="row">
+                <div class="cssbox col-md-6">
+                    <a id="screenshot1" href="#screenshot1"><img class="cssbox_thumb" src="screenshot.jpg" alt="Pext screenshot showing the emoji module" />
+                        <span class="cssbox_full"><img src="screenshot.jpg" alt="Pext screenshot showing the emoji module" /></span>
+                    </a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a class="cssbox_next" href="#screenshot2">&gt;</a>
+                </div>
+                <div class="cssbox col-md-6">
+                    <a id="screenshot2" href="#screenshot2"><img class="cssbox_thumb" src="screenshot2.jpg" alt="Pext screenshot showing the openweathermap module" />
+                        <span class="cssbox_full"><img src="screenshot2.jpg" alt="Pext screenshot showing the openweathermap module" /></span>
+                    </a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a class="cssbox_prev" href="#screenshot1">&lt;</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <h1 id="introduction">What is Pext</h1>
                     <p>Pext stands for Python-based extendable tool. It is a GPLv3+ application for GNU/Linux and macOS which provides a reasonably minimal core and the ability to load modules, making it simple yet powerful. As long as it can be expressed in a filterable list and possibly with command-line style commands, it can be expressed in Pext.</p>
                     <p>Pext is hosted on both GitHub (to make use of its popularity) and on NotABug (for its commitment to software freedom). If you prefer the buttons to link to NotABug instead of GitHub, <a href="notabug.html">click here</a>.</p>
                     <a href="https://github.com/Pext/Pext" class="btn btn-primary">Get Pext</a>
+                    <a href="https://pext.readthedocs.io" class="btn btn-default">Read the Docs</a>
                 </div>
             </div>
             <div class="row">
