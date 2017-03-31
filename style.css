@@ -42,3 +42,7 @@ img {
 .module p {
     height: 60px;
 }
+
+.cssbox img {
+    width: 604px;
+}
