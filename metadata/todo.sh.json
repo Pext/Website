@@ -1,0 +1,11 @@
+{
+  "name": "todo.sh",
+  "developer": "Sylvia van Os (Pext lead developer)",
+  "description": "Allows Pext to do todo-list management through todo.sh",
+  "homepage": "https://pext.hackerchick.me/",
+  "license": "GPL-3.0+",
+  "git_urls": [
+    "https://github.com/Pext/pext_module_todo.sh",
+    "https://notabug.org/Pext/pext_module_todo.sh"
+  ]
+}
