@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "modules": ["https://pext.hackerchick.me/metadata/emoji.json",
-              "https://pext.hackerchick.me/metadata/launcher.json",
-              "https://pext.hackerchick.me/metadata/openweathermap.json",
-              "https://pext.hackerchick.me/metadata/pass.json",
-              "https://pext.hackerchick.me/metadata/radiobrowser.json",
-              "https://pext.hackerchick.me/metadata/repl.json",
-              "https://pext.hackerchick.me/metadata/ssh.json",
-              "https://pext.hackerchick.me/metadata/todo.sh.json"
+  "modules": ["https://pext.hackerchick.me/metadata/modules/emoji.json",
+              "https://pext.hackerchick.me/metadata/modules/launcher.json",
+              "https://pext.hackerchick.me/metadata/modules/openweathermap.json",
+              "https://pext.hackerchick.me/metadata/modules/pass.json",
+              "https://pext.hackerchick.me/metadata/modules/radiobrowser.json",
+              "https://pext.hackerchick.me/metadata/modules/repl.json",
+              "https://pext.hackerchick.me/metadata/modules/ssh.json",
+              "https://pext.hackerchick.me/metadata/modules/todo.sh.json"
              ]
 }
