@@ -7,5 +7,10 @@
   "git_urls": [
     "https://github.com/Pext/pext_module_openweathermap",
     "https://notabug.org/Pext/pext_module_openweathermap"
+  ],
+  "platforms": [
+    "Linux",
+    "Darwin",
+    "Windows"
   ]
 }

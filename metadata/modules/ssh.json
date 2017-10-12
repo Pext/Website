@@ -7,5 +7,9 @@
   "git_urls": [
     "https://github.com/Pext/pext_module_ssh",
     "https://notabug.org/Pext/pext_module_ssh"
+  ],
+  "platforms": [
+    "Linux",
+    "Darwin"
   ]
 }

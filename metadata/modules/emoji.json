@@ -7,5 +7,10 @@
   "git_urls": [
     "https://github.com/Pext/pext_module_emoji",
     "https://notabug.org/Pext/pext_module_emoji"
+  ],
+  "platforms": [
+    "Linux",
+    "Darwin",
+    "Windows"
   ]
 }

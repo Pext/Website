@@ -7,5 +7,9 @@
   "git_urls": [
     "https://github.com/Pext/pext_module_pass",
     "https://notabug.org/Pext/pext_module_pass"
+  ],
+  "platforms": [
+    "Linux",
+    "Darwin"
   ]
 }

@@ -7,5 +7,9 @@
   "git_urls": [
     "https://github.com/Pext/pext_module_radiobrowser",
     "https://notabug.org/Pext/pext_module_radiobrowser"
+  ],
+  "platforms": [
+    "Linux",
+    "Darwin"
   ]
 }
