@@ -1,5 +1,6 @@
 {
   "version": 2,
-  "themes": ["https://pext.hackerchick.me/metadata/themes/eggplant.json"
-             ]
+  "themes": ["https://raw.githubusercontent.com/Pext/pext_theme_eggplant/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_cottoncandy/master/metadata.json"
+            ]
 }
