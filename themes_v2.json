@@ -1,6 +1,15 @@
 {
   "version": 2,
-  "themes": ["https://raw.githubusercontent.com/Pext/pext_theme_eggplant/master/metadata.json",
-             "https://raw.githubusercontent.com/Pext/pext_theme_cottoncandy/master/metadata.json"
+  "themes": ["https://raw.githubusercontent.com/Pext/pext_theme_banana/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_cherry/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_cottoncandy/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_cucumber/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_dreamsicle/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_eggplant/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_gunmetal/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_lunar/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_mint/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_snow/master/metadata.json",
+             "https://raw.githubusercontent.com/Pext/pext_theme_solar/master/metadata.json"
             ]
 }
