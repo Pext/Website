@@ -11,6 +11,10 @@ img {
     max-width: 100%;
 }
 
+#navigation {
+    margin-top: 20px;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
@@ -45,4 +49,12 @@ img {
 
 .cssbox img {
     width: 604px;
+}
+
+.nav-pills > li {
+    float: none;
+}
+
+.nav > li {
+    display: inline-block;
 }
