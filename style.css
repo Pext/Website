@@ -43,6 +43,28 @@ img {
     max-width: 800px;
 }
 
+.section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section:first-of-type {
+    margin-top: 0px;
+}
+
+.section:last-of-type {
+    margin-bottom: 0px;
+}
+
+.section div.well {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section div.well h1 {
+    margin-top: 0px;
+}
+
 .module p {
     height: 60px;
 }
