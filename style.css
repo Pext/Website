@@ -80,3 +80,7 @@ img {
 .nav > li {
     display: inline-block;
 }
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    margin: auto;
+}

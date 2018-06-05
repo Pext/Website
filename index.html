@@ -12,7 +12,6 @@
     <link href="fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet">
     <link href="fontawesome-free-5.0.2/web-fonts-with-css/css/fa-brands.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
-    <link href="cssbox.css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/x-icon" href="pext.png">
 </head>
 
@@ -29,30 +28,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="cssbox col-md-4">
-                        <a id="screenshot1" href="#screenshot1"><img class="cssbox_thumb" src="pext_radiobrowser_infopanel.png" alt="Pext running the radiobrowser module with info panel" />
-                            <span class="cssbox_full"><img src="pext_radiobrowser_infopanel.png" alt="Pext running the radiobrowser module with info panel" /></span>
-                        </a>
-                        <a class="cssbox_close" href="#void"></a>
-                        <a class="cssbox_next" href="#screenshot2">&gt;</a>
-                    </div>
-                    <div class="cssbox col-md-4">
-                        <a id="screenshot2" href="#screenshot2"><img class="cssbox_thumb" src="pext_openweathermap_contextmenu.png" alt="Pext running the openweathermap module with context menu" />
-                            <span class="cssbox_full"><img src="pext_openweathermap_contextmenu.png" alt="Pext running the openweathermap module with context menu" /></span>
-                        </a>
-                        <a class="cssbox_close" href="#void"></a>
-                        <a class="cssbox_prev" href="#screenshot1">&lt;</a>
-                        <a class="cssbox_next" href="#screenshot3">&gt;</a>
-                    </div>
-                    <div class="cssbox col-md-4">
-                        <a id="screenshot3" href="#screenshot3"><img class="cssbox_thumb" src="pext_emoji.png" alt="Pext running the emoji module" />
-                            <span class="cssbox_full"><img src="pext_emoji.png" alt="Pext running the emoji module" /></span>
-                        </a>
-                        <a class="cssbox_close" href="#void"></a>
-                        <a class="cssbox_prev" href="#screenshot2">&lt;</a>
-                    </div>
-                </div>
-                <div class="row">
                     <div id="navigation" class="col-md-12">
                         <ul class="nav nav-pills" role="navigation">
                           <li role="presentation"><a href="https://twitter.com/PextTool"><span class="fab fa-twitter"></span> Twitter</a></li>
@@ -61,19 +36,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="navigation" class="col-md-12">
-                        <ul class="nav nav-pills" role="navigation">
-                          <li role="presentation"><a href="#community">Community & Help</a></li>
-                          <li role="presentation"><a href="#donate">Donations & Merchandise</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
                     <div id="introduction" class="col-md-12">
                         <h1>Your swiss army knife</h1>
                         <p>With Pext, you can do so much with just a few keystrokes. <a href="https://github.com/search?q=topic%3Amodule+org%3APext&type=Repositories">See what's currently supported</a> or <a href="https://pext.readthedocs.io/en/latest/module_development.html">extend it yourself</a>.</p>
-                        <p><strong>The video below shows the launcher module as an example. Many more modules are available.</strong></p>
-                        <p class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/0WYq4i1bCUA?rel=0&amp;controls=1&amp;showinfo=1" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+                        <div id="carousel-screenshots" class="carousel slide" data-ride="carousel" data-pause="null">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="pext_radiobrowser_infopanel.png" alt="Radio module">
+                                </div>
+                                <div class="item">
+                                    <img src="pext_openweathermap_contextmenu.png" alt="Weather module">
+                                </div>
+                                <div class="item">
+                                    <img src="pext_emoji.png" alt="Emoji module">
+                                </div>
+                            </div>
+                        </div>
+
                         <p><a href="download" class="btn btn-lg btn-block btn-success">Download Pext <br/><span class="fab fa-linux fa-lg"></span> <span class="fab fa-apple fa-lg"></span> <span class="fab fa-windows fa-lg"></span></a></p>
                         <a href="https://pext.readthedocs.io" class="btn btn-default">Read the documentation</a>
                         <a href="https://github.com/Pext/Pext" class="btn btn-default">Get the source code (GPLv3+)</a>
@@ -115,5 +96,8 @@
             document.getElementById("mirror").style.display = "block";
         }
     </script>
+
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html> 
