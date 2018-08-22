@@ -24,6 +24,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script:
+  - mkdir -p ~/.config/pext/
   - echo "[settings]" > ~/.config/pext/settings
   - echo "update_check = False" >> ~/.config/pext/settings
   - echo "object_update_check = False" >> ~/.config/pext/settings
