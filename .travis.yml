@@ -1,6 +1,8 @@
 deploy:
   provider: pages
   skip-cleanup: true
+  on:
+    branch: feature/autoscreenshot
 
 sudo: required
 
