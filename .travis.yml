@@ -2,8 +2,16 @@ deploy:
   provider: pages
   skip-cleanup: true
 
+sudo: required
+
 os:
   - linux
+
+before_install:
+  - sudo apt install -y x11-apps fuse
+  - sudo modprobe fuse
+  - sudo chmod 666 /dev/fuse
+  - sudo chown root:$USER /etc/fuse.conf
 
 script:
   - wget https://github.com/Pext/Pext/releases/download/v0.18/Pext-x86_64.AppImage
