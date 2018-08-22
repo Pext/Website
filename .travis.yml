@@ -19,7 +19,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script:
-  - wget https://github.com/Pext/Pext/releases/download/v0.18/Pext-x86_64.AppImage
+  - wget https://github.com/Pext/Pext/releases/download/continuous/Pext-x86_64.AppImage
   - chmod +x Pext-x86_64.AppImage
   - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json
   - ./Pext-x86_64.AppImage & export PEXT_PID=$!
