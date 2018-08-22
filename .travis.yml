@@ -30,13 +30,11 @@ script:
   - echo "object_update_check = False" >> ~/.config/pext/settings
   - wget https://github.com/Pext/Pext/releases/download/continuous/Pext-x86_64.AppImage
   - chmod +x Pext-x86_64.AppImage
-  - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json --install-module https://raw.githubusercontent.com/Pext/pext_module_weather/master/metadata.json
+  - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json --install-module https://raw.githubusercontent.com/Pext/pext_module_openweathermap/master/metadata.json
   - QT_STYLE_OVERRIDE=QtCurve ./Pext-x86_64.AppImage --module pext.module.emoji & export PEXT_PID=$!
   - sleep 5 && xdotool windowactivate "$(xdotool search --onlyvisible --name 'Pext' | head -n 1)" && xdotool type woman && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-emojis.PNG"
-  - rm "/tmp/screenshot"
   - kill -9 $PEXT_PID
   - QT_STYLE_OVERRIDE=QtCurve ./Pext-x86_64.AppImage --module pext.module.weather & export PEXT_PID=$!
   - sleep 5 && xdotool windowactivate "$(xdotool search --onlyvisible --name 'Pext' | head -n 1)" && xdotool type amsterdam && xdotool key Return && sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-weather.PNG"
-  - rm "/tmp/screenshot"
   - kill -9 $PEXT_PID
   - rm Pext-x86_64.AppImage
