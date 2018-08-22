@@ -13,10 +13,17 @@ before_install:
   - sudo chmod 666 /dev/fuse
   - sudo chown root:$USER /etc/fuse.conf
 
+before_script:
+  - "export DISPLAY=:99.0"
+  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 800x600x24"
+  - sleep 3 # give xvfb some time to start
+
 script:
   - wget https://github.com/Pext/Pext/releases/download/v0.18/Pext-x86_64.AppImage
   - chmod +x Pext-x86_64.AppImage
   - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json
-  - xvfb-run --server-args="-screen 0 800x600x24" ./Pext-x86_64.AppImage & sleep 5 && xwd -display :0 -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "screenshot1.png"
-  - xvfb-run --server-args="-screen 0 800x600x24" ./Pext-x86_64.AppImage --module pext.module.emoji & sleep 5 && xwd -display :0 -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "screenshot2.png"
+  - ./Pext-x86_64.AppImage &
+  - sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "screenshot1.png"
+  - ./Pext-x86_64.AppImage --module pext.module.emoji &
+  - sleep 5 && xwd -display :0 -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "screenshot2.png"
   - rm Pext-x86_64.AppImage
