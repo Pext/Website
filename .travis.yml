@@ -12,7 +12,7 @@ os:
 
 before_install:
   - sudo apt update
-  - sudo apt install -y x11-apps fuse qtcurve
+  - sudo apt install -y x11-apps fuse xdotool qtcurve
   - sudo modprobe fuse
   - sudo chmod 666 /dev/fuse
   - sudo chown root:$USER /etc/fuse.conf
@@ -30,11 +30,11 @@ script:
   - echo "object_update_check = False" >> ~/.config/pext/settings
   - wget https://github.com/Pext/Pext/releases/download/continuous/Pext-x86_64.AppImage
   - chmod +x Pext-x86_64.AppImage
-  - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json
-  - ./Pext-x86_64.AppImage & export PEXT_PID=$!
-  - sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext_main.png"
-  - kill -9 $PEXT_PID
+  - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json --install-module https://raw.githubusercontent.com/Pext/pext_module_weather/master/metadata.json
   - ./Pext-x86_64.AppImage --module pext.module.emoji & export PEXT_PID=$!
-  - sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext_emoji.png"
+  - sleep 5 && xdotool type woman && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-emojis.PNG"
+  - kill -9 $PEXT_PID
+  - ./Pext-x86_64.AppImage --module pext.module.weather & export PEXT_PID=$!
+  - sleep 5 && xdotool type amsterdam && xdotool key Return && sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-weather.PNG"
   - kill -9 $PEXT_PID
   - rm Pext-x86_64.AppImage
