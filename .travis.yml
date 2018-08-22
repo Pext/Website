@@ -11,6 +11,7 @@ os:
   - linux
 
 before_install:
+  - sudo apt update
   - sudo apt install -y x11-apps fuse qtcurve
   - sudo modprobe fuse
   - sudo chmod 666 /dev/fuse
