@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "modules": ["https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json",
+              "https://raw.githubusercontent.com/Pext/pext_module_launcher/master/metadata.json",
+              "https://raw.githubusercontent.com/Pext/pext_module_openweathermap/master/metadata.json",
+              "https://raw.githubusercontent.com/Pext/pext_module_pass/master/metadata.json",
+              "https://raw.githubusercontent.com/Pext/pext_module_radiobrowser/master/metadata.json",
+              "https://raw.githubusercontent.com/Pext/pext_module_todo/master/metadata.json"
+             ]
+}

@@ -1,0 +1,42 @@
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  on:
+    branch: feature/autoscreenshot
+
+sudo: required
+dist: trusty
+
+os:
+  - linux
+
+before_install:
+  - sudo apt update
+  - sudo apt install -y matchbox-window-manager x11-apps fuse xdotool qtcurve
+  - sudo modprobe fuse
+  - sudo chmod 666 /dev/fuse
+  - sudo chown root:$USER /etc/fuse.conf
+
+before_script:
+  - "export DISPLAY=:99.0"
+  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 500x300x24"
+  - sleep 3 # give xvfb some time to start
+  - matchbox-window-manager &
+  - sleep 3
+
+script:
+  - mkdir -p ~/.config/pext/
+  - echo "[settings]" > ~/.config/pext/settings
+  - echo "update_check = False" >> ~/.config/pext/settings
+  - echo "object_update_check = False" >> ~/.config/pext/settings
+  - wget https://github.com/Pext/Pext/releases/download/continuous/Pext-x86_64.AppImage
+  - chmod +x Pext-x86_64.AppImage
+  - ./Pext-x86_64.AppImage --install-module https://raw.githubusercontent.com/Pext/pext_module_emoji/master/metadata.json --install-module https://raw.githubusercontent.com/Pext/pext_module_openweathermap/master/metadata.json
+  - QT_STYLE_OVERRIDE=QtCurve ./Pext-x86_64.AppImage --module pext.module.emoji & export PEXT_PID=$!
+  - sleep 5 && xdotool windowactivate "$(xdotool search --onlyvisible --name 'Pext' | head -n 1)" && xdotool type woman && sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-emojis.PNG"
+  - kill -9 $PEXT_PID
+  - QT_STYLE_OVERRIDE=QtCurve ./Pext-x86_64.AppImage --module pext.module.weather & export PEXT_PID=$!
+  - sleep 5 && xdotool windowactivate "$(xdotool search --onlyvisible --name 'Pext' | head -n 1)" && xdotool type amsterdam && xdotool key Return && sleep 5 && xwd -root -out "/tmp/screenshot" >/dev/null && convert "/tmp/screenshot" "pext-weather.PNG"
+  - kill -9 $PEXT_PID
+  - rm Pext-x86_64.AppImage
