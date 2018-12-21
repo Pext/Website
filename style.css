@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+.hide-if-noscript {
+    display: none;
+}
+
 #navigation {
     margin-top: 20px;
 }

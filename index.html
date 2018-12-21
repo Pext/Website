@@ -11,6 +11,7 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet">
     <link href="fontawesome-free-5.0.2/web-fonts-with-css/css/fa-brands.min.css" rel="stylesheet">
+    <link href="fontawesome-free-5.0.2/web-fonts-with-css/css/fa-solid.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/x-icon" href="pext.png">
 </head>
@@ -55,9 +56,65 @@
                             </div>
                         </div>
 
-                        <p><a href="download" class="btn btn-lg btn-block btn-success">Download Pext 0.22 <br/><span class="fab fa-linux fa-lg"></span> <span class="fab fa-apple fa-lg"></span> <span class="fab fa-windows fa-lg"></span></a></p>
+                        <p>
+                        <noscript><a href="https://github.com/Pext/Pext/releases/tag/v0.22" class="btn btn-lg btn-block btn-success">Download Pext 0.22 <br/><span class="fab fa-linux fa-lg"></span> <span class="fab fa-apple fa-lg"></span> <span class="fab fa-windows fa-lg"></span></a></noscript>
+                        <button type="button" class="hide-if-noscript btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#downloadModal">Download Pext 0.22 <br/><span class="fab fa-linux fa-lg"></span> <span class="fab fa-apple fa-lg"></span> <span class="fab fa-windows fa-lg"></span></button></p>
                         <a href="https://pext.readthedocs.io" class="btn btn-default">Read the documentation</a>
                         <a href="https://github.com/Pext/Pext" class="btn btn-default">Get the source code (GPLv3+)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="downloadModalTitle">Download</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <ul class="nav nav-pills" id="download-osselect" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="linux-pill" data-toggle="pill" href="#linux" role="pill" aria-controls="linux" aria-selected="true"><h1><span class="fab fa-linux fa-lg"></span> Linux</h1></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="macos-pill" data-toggle="pill" href="#macos" role="pill" aria-controls="macos" aria-selected="false"><h1><span class="fab fa-apple fa-lg"></span> macOS</h1></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="windows-pill" data-toggle="pill" href="#windows" role="pill" aria-controls="windows" aria-selected="false"><h1><span class="fab fa-windows fa-lg"></span> Windows</h1></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="download-osselect-tabContent">
+                                    <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux">
+                                        <h2>Recommended</h2>
+                                        <p><a href="https://github.com/Pext/Pext/releases/download/v0.22/Pext-0.22-x86_64.AppImage"><span class="fas fa-archive fa-lg"></span> AppImage (runs on any Linux)</a></p>
+                                        <h3>Other versions</h3>
+                                        <p><a href="https://aur.archlinux.org/packages/pext/"><span class="fas fa-archive fa-lg"></span> Arch Linux</a></p>
+                                        <p><a href="https://pypi.python.org/pypi/pext/"><span class="fas fa-archive fa-lg"></span> PyPI</a></p>
+                                        <h4>Here be dragons</h4>
+                                        <p><a href="https://github.com/Pext/Pext/releases/tag/continuous"><span class="fas fa-archive fa-lg"></span> Test versions</a></p>
+                                        <p><a href="https://github.com/Pext/Pext/blob/master/INSTALL_FROM_SOURCE.md"><span class="fas fa-archive fa-lg"></span> Build it yourself</a></p>
+                                    </div>
+                                    <div class="tab-pane fade" id="macos" role="tabpanel" aria-labelledby="macos">
+                                        <h2>Recommended</h2>
+                                        <p><a href="https://github.com/Pext/Pext/releases/download/v0.22/Pext-0.22.dmg"><span class="fas fa-archive fa-lg"></span> Pext.dmg</a></p>
+                                        <h4>Here be dragons</h4>
+                                        <p><a href="https://github.com/Pext/Pext/releases/tag/continuous"><span class="fas fa-archive fa-lg"></span> Test versions</a></p>
+                                        <p><a href="https://github.com/Pext/Pext/blob/master/INSTALL_FROM_SOURCE.md"><span class="fas fa-archive fa-lg"></span> Build it yourself</a></p>
+                                    </div>
+                                    <div class="tab-pane fade" id="windows" role="tabpanel" aria-labelledby="windows">
+                                        <h2>Recommended</h2>
+                                        <p><a href="https://github.com/Pext/Pext/releases/download/v0.22/Pext.exe"><span class="fas fa-archive fa-lg"></span> Pext Installer</a></p>
+                                        <h4>Here be dragons</h4>
+                                        <p><a href="https://github.com/Pext/Pext/releases/tag/continuous"><span class="fas fa-archive fa-lg"></span> Test versions</a></p>
+                                        <p><a href="https://github.com/Pext/Pext/blob/master/INSTALL_FROM_SOURCE.md"><span class="fas fa-archive fa-lg"></span> Build it yourself</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,6 +139,10 @@
     <script type="text/javascript">
         if (location.hostname != "pext.io") {
             document.getElementById("mirror").style.display = "block";
+        }
+        var toUnhide = document.getElementsByClassName("hide-if-noscript");
+        for (var i = 0; i < toUnhide.length; i++) {
+            toUnhide[i].style.display = "block";
         }
     </script>
 
