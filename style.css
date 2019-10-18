@@ -93,3 +93,18 @@ img {
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
     margin: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2E3440;
+        color: #ECEFF4;
+    }
+
+    a {
+        color: #81A1C1;
+    }
+
+    .well {
+        background-color: #3B4252;
+    }
+}
