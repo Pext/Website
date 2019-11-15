@@ -29,8 +29,8 @@
                 <div id="navigation" class="col-md-12">
                    <ul class="nav nav-pills justify-content-center">
                       <li class="nav-item"><a class="nav-link" href="https://twitter.com/PextTool"><span class="fab fa-twitter"></span> Twitter</a></li>
-                      <li class="nav-item"><a class="nav-link" href="https://github.com/Pext"><span class="fab fa-github"></span> GitHub</span></a></li>
-                      <li class="nav-item"><a class="nav-link" href="https://hosted.weblate.org/projects/pext/"><span class="fas fa-language"></span> Translate</span></a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://github.com/Pext"><span class="fab fa-github"></span> GitHub</a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://hosted.weblate.org/projects/pext/"><span class="fas fa-language"></span> Translate</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="downloadModalTitle">Download</h5>
+                            <h3 class="modal-title" id="downloadModalTitle">Download</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -70,13 +70,13 @@
                         <div class="modal-body">
                             <ul class="nav nav-pills nav-fill" id="download-osselect" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link" id="linux-pill" data-toggle="pill" href="#linux" role="pill" aria-controls="linux" aria-selected="true"><h1><span class="fab fa-linux fa-lg"></span> Linux</h1></a>
+                                    <a class="nav-link" id="linux-pill" data-toggle="pill" href="#linux" aria-controls="linux" aria-selected="true"><h1><span class="fab fa-linux fa-lg"></span> Linux</h1></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="macos-pill" data-toggle="pill" href="#macos" role="pill" aria-controls="macos" aria-selected="false"><h1><span class="fab fa-apple fa-lg"></span> macOS</h1></a>
+                                    <a class="nav-link" id="macos-pill" data-toggle="pill" href="#macos" aria-controls="macos" aria-selected="false"><h1><span class="fab fa-apple fa-lg"></span> macOS</h1></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="windows-pill" data-toggle="pill" href="#windows" role="pill" aria-controls="windows" aria-selected="false"><h1><span class="fab fa-windows fa-lg"></span> Windows</h1></a>
+                                    <a class="nav-link" id="windows-pill" data-toggle="pill" href="#windows" aria-controls="windows" aria-selected="false"><h1><span class="fab fa-windows fa-lg"></span> Windows</h1></a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="download-osselect-tabContent">
@@ -113,9 +113,7 @@
                 </div>
             </div>
 
-            <p></p>
-
-            <div class="card">
+            <section class="card">
                 <div class="card-header">
                     <h1>Why Pext</h1>
                 </div>
@@ -140,11 +138,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <p></p>
-
-            <div class="card">
+            <section class="card">
                 <div class="card-header">
                     <h1>Modules</h1>
                 </div>
@@ -183,15 +179,13 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <a href="https://pext.readthedocs.io/en/latest/module_development.html" target="_blank"><h2>Create your own</h2></a>
+                            <a href="https://pext.readthedocs.io/en/latest/module_development.html" class="btn btn-primary btn-lg" target="_blank">Create your own</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <p></p>
-
-            <div class="card">
+            <section class="card">
                 <div class="card-header">
                     <h1>Community &amp; Help</h1>
                 </div>
@@ -199,24 +193,24 @@
                     <p>The Pext community can be found on Matrix (#pext:matrix.org), Telegram (@PextTool) or IRC (#pext on Freenode). All these channels are connected, so use whatever you prefer. For beginners, unless you already have a Telegram account, we recommend Matrix.</p>
                     <p>Feel free to stop by for questions, tips or just a friendly chat with other users.</p>
                     <p>You may also ask for support on <a href="https://twitter.com/PextTool">Twitter</a>.</p>
-                    <a href="https://riot.im/app/#/room/%23pext:matrix.org" class="btn btn-secondary">Chat via Matrix</a>
-                    <a href="https://t.me/PextTool" class="btn btn-secondary">Chat via Telegram</a>
-                    <a href="http://webchat.freenode.net/?channels=%23pext&uio=MTY9dHJ1ZQ79" class="btn btn-secondary">Chat via IRC</a>
+                    <a href="https://riot.im/app/#/room/%23pext:matrix.org" class="btn btn-primary">Chat via Matrix</a>
+                    <a href="https://t.me/PextTool" class="btn btn-primary">Chat via Telegram</a>
+                    <a href="http://webchat.freenode.net/?channels=%23pext&uio=MTY9dHJ1ZQ79" class="btn btn-primary">Chat via IRC</a>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 
-    <div id="footer" class="text-center">
+    <footer class="text-center">
         Copyright 2016 - 2019 <a href="https://hackerchick.me/">Sylvia van Os</a> - <a href="https://github.com/Pext/pext.github.io">Source code</a>
-    </div>
+    </footer>
 
     <script type="text/javascript">
-        if (location.hostname != "pext.io") {
+        if (location.hostname !== "pext.io") {
             document.getElementById("mirror").style.display = "block";
         }
-        var toUnhide = document.getElementsByClassName("hide-if-noscript");
-        for (var i = 0; i < toUnhide.length; i++) {
+        const toUnhide = document.getElementsByClassName("hide-if-noscript");
+        for (let i = 0; i < toUnhide.length; i++) {
             toUnhide[i].style.display = "block";
         }
     </script>
